@@ -20,9 +20,12 @@
     <!-- Title -->
     <title>Conf Hawaii</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
     <!-- Header -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      id="header"
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="assets/images/platzi-logo.png" alt="logo" />
@@ -40,19 +43,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">La conferencia</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#main">La conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Las oradores</a>
+              <a class="nav-link" href="#speakers">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">El lugar y la fecha</a>
+              <a class="nav-link" href="#place-time">El lugar y la fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conviértete en orador</a>
+              <a class="nav-link" href="#become-a-speaker"
+                >Conviértete en orador</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-platzi" href="#">Comprar tickets</a>
@@ -227,7 +232,7 @@
           <div class="col-12 px-0 col-lg-6">
             <img src="assets/images/honolulu.jpg" alt="honolulu" />
           </div>
-          <div class="col-12 px-2 col-lg-6">
+          <div class="col-12 px-0 col-lg-6">
             <h2 class="mt-4 mx-2">Honolulu - Octubre 2025</h2>
             <p class="mx-2 text-justify">
               Honolulu is the capital and largest city of the U.S. state of
@@ -244,7 +249,7 @@
     <!-- Lugar y Fecha -->
 
     <!-- Conviértete en Speaker -->
-    <section id="conviertete-en-orador" class="pt-4">
+    <section id="become-a-speaker" class="pt-4">
       <div class="container">
         <div class="row">
           <div class="col text-uppercase text-center">
@@ -254,8 +259,10 @@
         </div>
         <div class="row">
           <div class="col text-center">
-            Anótate como orador para dar una charla. Cuéntanos de qué quisieras
-            hablar!
+            Anótate como orador para dar una
+            <abbr data-toggle="tooltip" title="Charlas de 5 minutos">
+              charla ignite</abbr
+            >. Cuéntanos de qué quisieras hablar!
           </div>
         </div>
         <div class="row my-4">
